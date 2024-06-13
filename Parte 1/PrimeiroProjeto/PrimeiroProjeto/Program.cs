@@ -3,9 +3,9 @@ using System.Globalization; // Biblioteca para usar a concatenacao de strings co
 
 namespace PrimeiroProjeto
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
             /* 
             string nome = "João";
@@ -34,16 +34,16 @@ namespace PrimeiroProjeto
             */
 
             Console.WriteLine("Write three numbers: ");
-            int n1 = int.Parse(Console.ReadLine());
-            int n2 = int.Parse(Console.ReadLine());
-            int n3 = int.Parse(Console.ReadLine());
+            var n1 = int.Parse(Console.ReadLine() ?? string.Empty);
+            var n2 = int.Parse(Console.ReadLine() ?? string.Empty);
+            var n3 = int.Parse(Console.ReadLine() ?? string.Empty);
             
             double result = Maior(n1, n2, n3);
 
             Console.WriteLine($"Higher = {result}");
         }
 
-        static int Maior(int a, int b, int c)
+        private static int Maior(int a, int b, int c)
         {
             int m;
             if (a > b && a > c)
