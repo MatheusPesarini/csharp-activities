@@ -1,13 +1,13 @@
-﻿using System;
-using System.Globalization; // Biblioteca para usar a concatenacao de strings com o cifrao
+﻿//using System;
+//using System.Globalization; // Biblioteca para usar a concatenacao de strings com o cifrao
 
-namespace PrimeiroProjeto
+namespace PrimeiroProjeto 
 {
-    internal class Program
+    internal static class Program 
     {
-        private static void Main()
+        private static void Main() 
         {
-            /* 
+            /*
             string nome = "João";
             float saldo = 10.5567F;
             Console.WriteLine($"{nome} testando c# {saldo:F2}");
@@ -16,7 +16,6 @@ namespace PrimeiroProjeto
             string a = vetor[0];
             string b = vetor[1];
             string c = vetor[2];
-            
 
             //int n1 = int.Parse(Console.ReadLine());
             //char ch = char.Parse(Console.ReadLine());
@@ -34,27 +33,27 @@ namespace PrimeiroProjeto
             */
 
             Console.WriteLine("Write three numbers: ");
-            var n1 = int.Parse(Console.ReadLine() ?? string.Empty);
-            var n2 = int.Parse(Console.ReadLine() ?? string.Empty);
-            var n3 = int.Parse(Console.ReadLine() ?? string.Empty);
+            int n1 = int.Parse(Console.ReadLine() ?? string.Empty);
+            int n2 = int.Parse(Console.ReadLine() ?? string.Empty);
+            int n3 = int.Parse(Console.ReadLine() ?? string.Empty);
             
             double result = Maior(n1, n2, n3);
 
-            Console.WriteLine($"Higher = {result}");
+            Console.WriteLine($"Higher = {result}"); 
         }
 
-        private static int Maior(int a, int b, int c)
+        private static int Maior(int a, int b, int c) 
         {
             int m;
             if (a > b && a > c)
             {
                 m = a;
             }
-            else if (b > c)
+            else if (b > c) 
             {
                 m = b;
             }
-            else
+            else 
             {
                 m = c;
             }
