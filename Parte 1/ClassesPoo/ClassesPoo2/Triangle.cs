@@ -1,6 +1,8 @@
-﻿namespace ClassesPoo;
-
-public class Triangle
+namespace ClassesPoo2
 {
-    public double A, B, C;
+    internal class Triangle
+    { 
+        public double A, B, C;
+    }
 }
+
