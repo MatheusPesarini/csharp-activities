@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace EstoqueLoja
+﻿namespace EstoqueLoja
 {
     internal static class Program
     {
@@ -19,7 +17,7 @@ namespace EstoqueLoja
                 op = int.Parse(Console.ReadLine());
 
                 Console.WriteLine("Type the change value");
-                
+
                 if (op == 1)
                 {
                     productQuantityChange += int.Parse(Console.ReadLine());
